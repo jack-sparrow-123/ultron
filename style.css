@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image:url(file:///C:/Users/user/OneDrive/Documents/projects/space.gif) ;
+  background-image:url('space.gif') ;
   background-repeat:no-repeat ;
   background-size: cover;
 }
@@ -40,7 +40,7 @@ body {
   }
   80% {
       left: calc(50% - 50px); /* Center the spaceship relative to the wormhole */
-      top: 50%; /* Keep spaceship vertically centered */
+      top: 50%; 
       transform: scale(1.5);
       opacity: 1;
   }
