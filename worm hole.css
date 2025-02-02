@@ -1,0 +1,70 @@
+
+body {
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:url(file:///C:/Users/user/OneDrive/Documents/projects/space.gif) ;
+  background-repeat:no-repeat ;
+  background-size: cover;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceship {
+  position: absolute;
+  width: 200px;
+  left: -100px;
+  animation: enterWormhole 5s linear infinite;
+ 
+}
+
+
+
+@keyframes enterWormhole {
+  0% {
+      left: -100px; /* Start outside the left side of the screen */
+      top: 50%; /* Position spaceship vertically centered */
+      transform: scale(1);
+      opacity: 1;
+  }
+  80% {
+      left: calc(50% - 50px); /* Center the spaceship relative to the wormhole */
+      top: 50%; /* Keep spaceship vertically centered */
+      transform: scale(1.5);
+      opacity: 1;
+  }
+  100% {
+      left: calc(50% - 50px); /* Center the spaceship relative to the wormhole */
+      top: 50%; /* Keep spaceship vertically centered */
+      transform: scale(0);
+      opacity: 0;
+  }
+}
+
+@keyframes swirl {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+  
+audio{
+
+margin-right: 30%;
+margin-bottom: 30%;
+}
+
+
