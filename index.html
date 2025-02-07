@@ -10,36 +10,34 @@
      <div class="scene">
         <img src="shipnew.png" alt="Spaceship" class="spaceship">
         
+<div class="black-hole"></div>
+
+<button id="playButton">Play Sounds</button>
+
 <audio id="spaceship-sound" loop controls>
   <source src="jet.mp3.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<button id="playSpaceshipButton">Play Spaceship Sound</button>
 
 <audio id="wormhole-sound" loop controls>
   <source src="swipe.mp3.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<button id="playWormholeButton">Play Wormhole Sound</button>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var spaceshipAudio = document.getElementById('spaceship-sound');
     var wormholeAudio = document.getElementById('wormhole-sound');
-    var playSpaceshipButton = document.getElementById('playSpaceshipButton');
-    var playWormholeButton = document.getElementById('playWormholeButton');
+    var playButton = document.getElementById('playButton');
 
-    playSpaceshipButton.addEventListener('click', function() {
+    playButton.addEventListener('click', function() {
       spaceshipAudio.play();
-      playSpaceshipButton.style.display = 'none'; 
-    });
-
-    playWormholeButton.addEventListener('click', function() {
       wormholeAudio.play();
-      playWormholeButton.style.display = 'none'; 
+      playButton.style.display = 'none'; 
     });
   });
 </script>
+
 
 </body>
 </html>
